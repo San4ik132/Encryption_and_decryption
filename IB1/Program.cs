@@ -5,7 +5,7 @@ using System.Text;
 
 namespace IB1
 {
-    internal class Program
+    class Program
     {
              Dictionary<string, List<string>> MftEA = new Dictionary<string, List<string>>()
             {
@@ -18,7 +18,7 @@ namespace IB1
                 { "G", new List<string> {"D"}},
                 { "H", new List<string> {",", "p", "r", ",", "p", "r", ",", "p", "r", ",", "p", "r"}},
                 { "I", new List<string> {"А", ")", "q", "А", ")", "q", "А", ")", "q", "А", ")", "q"}},
-                { "J", new List<string> {"e", "e", "e", "e", ")", "e", "e", "e", "e", "e", "e", "e"}},
+                { "J", new List<string> {"e"}},
                 { "K", new List<string> {"L"}},
                 { "L", new List<string> {"-", "O", "и", "A", "O", "и", "A", "O", "и", "O", "A", "и"}},
                 { "M", new List<string> {"R"}},
@@ -66,21 +66,18 @@ namespace IB1
                 string decryptedCharacter = string.Empty;
                 bool characterFound = false;
 
-                foreach (var entry in P.MftEA)
+                foreach (var K in P.MftEA)
                 {
-                    if (entry.Value[0] == character.ToString())
+                    if (K.Value[0] == character.ToString())
                     {
-                        decryptedCharacter = entry.Key;
-                        string temp = entry.Value[0];
-                        entry.Value.RemoveAt(0);
-                        entry.Value.Add(temp);
-                        
+                        decryptedCharacter = K.Key;
+                        string temp = K.Value[0];
+                        K.Value.RemoveAt(0);
+                        K.Value.Add(temp);
                         characterFound = true;
                         break;
-                    }
-                 
+                    }               
                 }
-
                 if (characterFound)
                 {
                     decryptedText.Append(decryptedCharacter);
@@ -89,9 +86,7 @@ namespace IB1
                 {
                     decryptedText.Append(character);
                 }
-
             }
-
             return decryptedText.ToString();
         }
 
@@ -99,13 +94,10 @@ namespace IB1
         {
             var P = new Program();
             StringBuilder encryptedText = new StringBuilder();
-           
-
             foreach (char character in text)
             {
                 string encryptedCharacter = string.Empty;
                 bool characterFound = false;
-
                 foreach (var K in P.MftEA)
                 {
                     if (K.Key.Contains(character.ToString()))
@@ -118,7 +110,6 @@ namespace IB1
                         break;
                     }
                 }
-
                 if (characterFound)
                 {
                     encryptedText.Append(encryptedCharacter);
@@ -128,7 +119,6 @@ namespace IB1
                     encryptedText.Append(character);
                 }
             }
-
             return encryptedText.ToString();
         }
     }
