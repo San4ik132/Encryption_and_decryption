@@ -1,0 +1,15 @@
+D:\4 - kurs\Информационная безопасность\IB1\bin\Debug\IB1.exe.config
+D:\4 - kurs\Информационная безопасность\IB1\bin\Debug\IB1.exe
+D:\4 - kurs\Информационная безопасность\IB1\bin\Debug\IB1.pdb
+D:\4 - kurs\Информационная безопасность\IB1\obj\Debug\IB1.csproj.AssemblyReference.cache
+D:\4 - kurs\Информационная безопасность\IB1\obj\Debug\IB1.csproj.SuggestedBindingRedirects.cache
+D:\4 - kurs\Информационная безопасность\IB1\obj\Debug\IB1.csproj.CoreCompileInputs.cache
+D:\4 - kurs\Информационная безопасность\IB1\obj\Debug\IB1.exe
+D:\4 - kurs\Информационная безопасность\IB1\obj\Debug\IB1.pdb
+C:\Users\Pc\Desktop\IB1\bin\Debug\IB1.exe.config
+C:\Users\Pc\Desktop\IB1\bin\Debug\IB1.exe
+C:\Users\Pc\Desktop\IB1\bin\Debug\IB1.pdb
+C:\Users\Pc\Desktop\IB1\obj\Debug\IB1.csproj.AssemblyReference.cache
+C:\Users\Pc\Desktop\IB1\obj\Debug\IB1.csproj.CoreCompileInputs.cache
+C:\Users\Pc\Desktop\IB1\obj\Debug\IB1.exe
+C:\Users\Pc\Desktop\IB1\obj\Debug\IB1.pdb
